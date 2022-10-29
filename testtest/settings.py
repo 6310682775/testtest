@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-9=gkvq3_4ix24#te#-vue(d(dw@i!7$$ocsun^r*)d6z-qi4ie
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'vacad2.herokuapp.com']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -125,5 +125,6 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+CSRF_TRUSTED_ORIGINS = ['http://127.0.0.1:8000/']
 import django_heroku
 django_heroku.settings(locals())
